@@ -4,7 +4,7 @@ import Home from "./Home"
 import About from "./About"
 import Storefront from "./Storefront"
 import NavBar from "./NavBar"
-import StoreNavBar from "./StoreNavBar"
+
 
 function App() {
   return (
