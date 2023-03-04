@@ -1,13 +1,10 @@
 import Snowboard from "./Snowboard"
 import Ski from "./Ski"
-import NavBar from "./NavBar"
-
+import StoreNavBar from "./StoreNavBar"
 import React, {Route, Switch, } from 'react'
- 
-
 function Storefront() {
   return (
-    <div><NavBar />
+    <div><StoreNavBar />
         <Switch>
             <Route path="/snowboard">
                 <Snowboard />
@@ -17,7 +14,6 @@ function Storefront() {
             </Route>
         </Switch>
     </div>
-    
     )
   }
 export default Storefront

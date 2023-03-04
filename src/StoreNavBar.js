@@ -1,39 +1,28 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-
-
-function NavBar() {
+function StoreNavBar() {
   return (
     <div>
-      <NavLink
-        to="/"
+        <NavLink
+        to="/snowboard"
         exact
         activeStyle={{
           background: "darkblue",
         }}
       >
-        Home
+        Snowboard
       </NavLink>
       <NavLink
-        to="/about"
+        to="/ski"
         exact
         activeStyle={{
           background: "darkblue",
         }}
       >
-        About
-      </NavLink>
-      <NavLink
-        to="/storefront"
-        exact
-        activeStyle={{
-          background: "darkblue",
-        }}
-      >
-        Storefront
+        Ski
       </NavLink>
     </div>
   )
 }
 
-export default NavBar
+export default StoreNavBar
