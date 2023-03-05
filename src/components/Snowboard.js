@@ -1,11 +1,16 @@
 import React from 'react'
+import SnowboardCard from './SnowboardCard'
 
-function Snowboard() {
-  return (
-    <div>
-        <h1>some cards with map function</h1>
-    </div>
-  )
+function Snowboard({snowboardsList}) {
+
+    const snowboardComponents = snowboardsList.map(snowboard => {
+        return <SnowboardCard key={snowboard.id} {...snowboard}/>
+    })
+    return (
+        <div className="snowboards">
+            {snowboardComponents}
+        </div>
+    )
 }
 
 export default Snowboard

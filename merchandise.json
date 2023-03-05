@@ -1,0 +1,171 @@
+{
+  "skis":[
+      {
+          "id": 1,
+          "brand": "Salomon",
+          "description": "Salomon S/MAX N6 XT Skis with Bindings",
+          "year": 2022,
+          "price":450,
+          "gender": "Women's",
+          "image": "https://www.rei.com/media/4cd08d86-8b93-4787-8a6f-d0030d08cfb8.jpg?size=784x588"
+      },
+      {
+          "id": 2,
+          "brand": "Fraction",
+          "description": "Faction Prodigy 2X Skis",
+          "year": 2022,
+          "price": 600,
+          "gender": "Women's",
+          "image": "https://www.rei.com/media/5f877867-c31c-4ea7-b8b7-228cfa51b010.jpg?size=784x588"
+      },
+      {
+          "id": 3,
+          "brand": "Icelantic Skis",
+          "description": "SIcelantic Skis Riveter 95 Skis",
+          "year": 2022,
+          "price": 750,
+          "gender": "Women's",
+          "image": "https://www.rei.com/media/72250fae-eb80-440c-8818-de1cb2c76966.jpg?size=784x588"
+      },
+      {
+          "id": 4,
+          "brand": "Icelantic Skis",
+          "description": "Icelantic Skis Nomad 105 Skis",
+          "year": 2022,
+          "price": 850,
+          "gender": "Men's",
+          "image": "https://www.rei.com/media/203f8ca6-f13a-40ff-ade4-1e5fa16a8e6c.jpg?size=784x588"
+      },
+      {
+          "id": 5,
+          "brand": "Armanda",
+          "description": "Armada ARV 84 Skis",
+          "year": 2022,
+          "price": 350,
+          "gender": "Men's",
+          "image": "https://www.rei.com/media/55aeec21-0582-406e-950b-fec9c03ed831.jpg?size=784x588"
+      },
+      {
+          "id": 6,
+          "brand": "Head",
+          "description": "Head Absolut Joy Skis with Bindings",
+          "year": 2022,
+          "price": 500,
+          "gender": "Women's",
+          "image": "https://www.rei.com/media/86555f91-6eaf-4725-9253-c04c91a46c93.jpg?size=784x588"
+      },
+      {
+          "id": 7,
+          "brand": "Line",
+          "description": "Line Pandora 94 Skis",
+          "year": 2022,
+          "price": 500,
+          "gender": "Women's",
+          "image": "https://www.rei.com/media/f74447c6-e15f-4cf8-a59a-e9cdf20f0bc9.jpg?size=784x588"
+      },
+      {
+          "id": 8,
+          "brand": "Nordica",
+          "description": "Nordica Enforcer 104 Free Skis",
+          "year": 2022,
+          "price": 800,
+          "gender": "Men's",
+          "image": "https://www.rei.com/media/518c238b-4072-43a9-b20c-6f54611f341c.jpg?size=784x588"
+      },
+      {
+          "id": 9,
+          "brand": "Nordica",
+          "description": "Nordica Santa Ana 93 Skis",
+          "year": 2022,
+          "price": 700,
+          "gender": "Women's",
+          "image": "https://www.rei.com/media/30942150-2d06-4248-80ba-a334402f8a99.jpg?size=784x588"
+      }
+  ],
+
+
+
+  "snowboards": [
+    {
+        "id": 1,
+        "brand": "Jones",
+        "description": "Jones Mountain Twin Snowboard",
+        "year": 2022,
+        "price":460,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/0bb422b1-ac30-4fb8-bd61-e555768fcbd9.jpg"
+    },
+    {
+        "id": 2,
+        "brand": "Capita",
+        "description": "Capita Space Metal Fantasy Snowboard",
+        "year": 2022,
+        "price": 320,
+        "gender": "Women's",
+        "image": "https://www.rei.com/media/bcbc0938-c440-4b29-9f38-fa80744cb17b.jpg?size=784x588"
+    },
+    {
+        "id": 3,
+        "brand": "Arbor",
+        "description": "Arbor Cadence Camber Snowboard",
+        "year": 2022,
+        "price": 330,
+        "gender": "Women's",
+        "image": "https://www.rei.com/media/7a655692-f08c-4883-ba52-80435a4632a6.jpg?size=784x588"
+    },
+    {
+        "id": 4,
+        "brand": "Capita",
+        "description": "Capita Mercury Snowboard",
+        "year": 2022,
+        "price": 850,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/9d8efea2-1fba-4552-bfa1-98b981925fbc.jpg?size=784x588"
+    },
+    {
+        "id": 5,
+        "brand": "Lib Tech",
+        "description": "Lib Tech Orca Splitboard",
+        "year": 2022,
+        "price": 960,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/4a218ad4-e417-42c8-ad29-91623b4761a5.jpg?size=784x588"
+    },
+    {
+        "id": 6,
+        "brand": "Lib Tech",
+        "description": "Lib Tech Cortado Snowboard",
+        "year": 2022,
+        "price": 420,
+        "gender": "Women's",
+        "image": "https://www.rei.com/media/dd7f42fa-d4c5-4417-9b95-1bb518e694d4.jpg?size=784x588"
+    },
+    {
+        "id": 7,
+        "brand": "Jones",
+        "description": "Jones Solution Splitboard",
+        "year": 2022,
+        "price": 980,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/1937350d-4889-4aa7-9c45-6ae35111cc50.jpg?size=784x588"
+    },
+    {
+        "id": 8,
+        "brand": "Jones",
+        "description": "Jones Frontier Splitboard",
+        "year": 2021,
+        "price": 800,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/a44c519f-1a75-4a43-9ee5-097b55ef4290.jpg?size=784x588"
+    },
+    {
+        "id": 9,
+        "brand": "Arbor",
+        "description": "Arbor Element Camber Snowboard",
+        "year": 2020,
+        "price": 500,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/6885a2ad-7d21-4b16-a065-4cdf8d903005.jpg?size=784x588"
+    }
+  ]
+}

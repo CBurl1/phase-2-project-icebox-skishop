@@ -32,6 +32,7 @@ function NavBar() {
       >
         Storefront
       </NavLink>
+      
     </div>
   )
 }

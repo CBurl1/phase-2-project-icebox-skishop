@@ -1,16 +1,14 @@
 import React from 'react'
 
-
-function Skicard({brand, price, gender, description, image, year, id}) {
+function SnowboardCard({brand, price, gender, description, image, year, id}) {
   return (
-    <div id={id} >
+    <div id={id}>
         <h2>{brand} <br/> {gender}</h2>
-        <image src={image}/>
+        <img src={image} alt={description}/>
         <p>{description} <br/>{year}<br/> </p>
         <p>{`$ ${price}.00`}</p>
-
     </div>
   )
 }
 
-export default Skicard
+export default SnowboardCard

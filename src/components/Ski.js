@@ -1,14 +1,17 @@
 import React from 'react'
-import Skicard from './Skicard'
+import SkiCard from './SkiCard'
 
-function Ski({skisList}) {
-    const skiComponents = 
+function Ski({skisList,seeSkis,handleSkiHover}) {
+
+    console.log(seeSkis)
+    const skiComponents =
         skisList.map(ski => {
-            return <Skicard key={ski.id} {...ski}/>
+
+            return <SkiCard key={ski.id} {...ski}/>
         })
 
   return (
-    <div>
+    <div className="skis">
       {skiComponents}
     </div>
   )
