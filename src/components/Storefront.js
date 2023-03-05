@@ -1,18 +1,18 @@
 import Snowboard from "./Snowboard"
 import Ski from "./Ski"
+import Apparel from "./Apparel"
 import React, {useState, useEffect} from 'react'
-
-import SubNavBar from "../SubNavBar"
-
 
 const url = "http://localhost:3000/"
 const skisUrl = url + "skis/"
 const snowboardUrl = url + "snowboards/"
+const apparelUrl = url + "apparel/"
+
+
 function Storefront() {
     const [skisList, setSkisList] = useState([])
     const [snowboardsList, setSnowboardsList] = useState([])
-    const [seeSkis, setSeeSkis] = useState(false)
-    const [seeSnowboards, setSeeSnowboards] = useState(false)
+    const [apparelList, setApparelList] = useState([])
 
     useEffect(()=> {
         fetch(skisUrl)
@@ -29,28 +29,22 @@ function Storefront() {
 
           setSnowboardsList(data)
         })
-  },[])
+    },[])
+    useEffect(()=> {
+      fetch(apparelUrl )
+        .then(r=>r.json())
+        .then((data) => {
 
-  function handleSkiClick () {
-    setSeeSkis(!seeSkis)
-  }
-  function handleSnowboardClick () {
-    setSeeSnowboards(!seeSnowboards)
-  }
+          setApparelList(data)
+        })
+    },[])
+
 
   return (
     <div>
-      <SubNavBar />
-          <Snowboard
-          snowboardsList={snowboardsList}
-          handleSkiClick={handleSkiClick}
-          
-          />
-          <Ski
-          skisList={skisList}
-          handleSnowboardClick={handleSnowboardClick}
-          seeSnowboards={seeSnowboards}
-          />
+      <Snowboard  snowboardsList={snowboardsList} />
+      <Ski skisList={skisList} />
+      <Apparel apparelList={apparelList}/>
     </div>
   )
 }
