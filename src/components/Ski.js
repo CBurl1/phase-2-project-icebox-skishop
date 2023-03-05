@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import SkiCard from './SkiCard'
 import {Route} from "react-router-dom"
 import SkiMerch from './SkiMerch'
 
@@ -13,13 +12,14 @@ function Ski({skisUrl}) {
             setSkisList(skisData)
           })
     },[])
-   
+
 
   return (
     <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdK4MjzhgO-fa-EbdEHODQeiFcn59xYH33eg&usqp=CAU"/>
+            <h2>Skis</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdK4MjzhgO-fa-EbdEHODQeiFcn59xYH33eg&usqp=CAU" alt="Skis"/>
             <Route path="/storefront/skis">
-                <SkiMerch/>
+                <SkiMerch skisList={skisList}/>
             </Route>
         </div>
   )
