@@ -285,14 +285,14 @@
       "image": "https://images.evo.com/imgp/700/136292/836731/patagonia-powslayer-jacket-women-s-.jpg"
     },
     {
+      "id": 11,
       "brand": "Picture Organic Clothing",
       "description": "Picture Organic Clothing Avening Bib Snow Pants",
-      "category": "Pants",
+      "category": "apparel",
       "year": "2022",
       "price": 180,
       "gender": "Men's",
-      "image": "https://www.rei.com/media/a97029ba-e7cb-44ab-ac9a-fb1a3f87f975.jpg?size=576x768",
-      "id": 11
+      "image": "https://www.rei.com/media/a97029ba-e7cb-44ab-ac9a-fb1a3f87f975.jpg?size=576x768"
     }
   ]
 }
