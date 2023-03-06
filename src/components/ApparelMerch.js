@@ -9,7 +9,10 @@ function ApparelMerch({apparelUrl}) {
   const [query, setQuery] = useState('')
   const [showForm, setShowForm] = useState(false);
   function removeApparel(doomedId) {
-    console.log(doomedId)
+    const newList = apparelList.filter(appObj => {
+      return appObj.id !== doomedId
+    })
+    setApparelList(newList)
   }
   function countLikes (likedObj){
     const merchLiked = [...apparelList].map(merchObj => {

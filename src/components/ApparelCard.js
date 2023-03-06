@@ -5,7 +5,7 @@ function ApparelCard({removeApparel, countLikes, likes, brand, price, gender, de
 
   function addLikes() {
     const newLikes = apparelLikes + 1
-    
+
     fetch(`http://localhost:3000/apparel/${id}`, {
       method: 'PATCH',
       headers: {"Content-Type": "application/json"},
@@ -18,6 +18,13 @@ function ApparelCard({removeApparel, countLikes, likes, brand, price, gender, de
 
     })
   }
+  function handleDelete() {
+    removeApparel(id)
+    fetch(`http://localhost:3000/snowboards/${id}`, {
+      method: 'DELETE',
+      headers: {'Content-Type': 'application/json'}
+    })
+  }
   return (
     <div>
         <div id={id} >
@@ -26,6 +33,7 @@ function ApparelCard({removeApparel, countLikes, likes, brand, price, gender, de
         <p>{description} <br/>{year}<br/> </p>
         <p>{`$ ${price}.00`}</p>
         <button onClick={addLikes}>💙 <br/> {apparelLikes}</button>
+        <button>Add to Cart</button><small><button onClick={()=>handleDelete(id)}>X</button></small>
     </div>
     </div>
   )
