@@ -18,7 +18,15 @@ function SnowboardMerch({snowboardUrl}) {
             setSnowboardsList(boardsData)
           })
       },[])
-      const search = snowboardsList.filter(snowboard => snowboard.brand.toLowerCase().includes(query))
+      
+      const search = snowboardsList.filter((snowboard) =>
+                     snowboard.brand.toLowerCase().includes(query) ||
+                     snowboard.description.toLowerCase().includes(query) ||
+                     snowboard.category.toLowerCase().includes(query) ||
+                     snowboard.gender.toLowerCase().includes(query) ||
+                     snowboard.price.toString().includes(query) ||
+                     snowboard.year.toString().includes(query)
+      )
 
       const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard}/>))
 

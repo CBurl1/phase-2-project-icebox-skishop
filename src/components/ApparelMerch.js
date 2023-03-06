@@ -17,7 +17,13 @@ function ApparelMerch({apparelUrl}) {
         setApparelList(apparelData)
       })
   },[])
-    const search = apparelList.filter(snowboard => snowboard.brand.toLowerCase().includes(query))
+    const search = apparelList.filter((app) =>  app.brand.toLowerCase().includes(query) ||
+                                                app.description.toLowerCase().includes(query) ||
+                                                app.category.toLowerCase().includes(query) ||
+                                                app.gender.toLowerCase().includes(query) ||
+                                                app.price.toString().includes(query) ||
+                                                app.year.toString().includes(query)
+    )
 
     const apparelComponents = search.map(apparel => (<ApparelCard key={apparel.id} {...apparel}/>))
   return (

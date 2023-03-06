@@ -17,7 +17,14 @@ function SkiMerch({skisUrl}) {
           setSkisList(skisData)
         })
   },[])
-     const search = skisList.filter(snowboard => snowboard.brand.toLowerCase().includes(query))
+     const search = skisList.filter((ski) =>
+      ski.brand.toLowerCase().includes(query) ||
+      ski.description.toLowerCase().includes(query) ||
+      ski.category.toLowerCase().includes(query) ||
+      ski.gender.toLowerCase().includes(query) ||
+      ski.price.toString().includes(query) ||
+      ski.year.toString().includes(query)
+                                                )
      const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski}/>))
   return (
     <div>
