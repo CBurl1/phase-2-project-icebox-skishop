@@ -15,7 +15,7 @@ function AddNewSnowdboardForm({addToState}) {
     const handleGender = (e)=> setGender(e.target.value)
     const handleImage = (e)=> setImage(e.target.value)
 
-    
+
     function handleSubmit(e){
       e.preventDefault()
       const newBoard = {
@@ -26,9 +26,19 @@ function AddNewSnowdboardForm({addToState}) {
         gender: newGender,
         image: newImage
     }
-    addToState(newBoard)
+    fetch("http://localhost:3000/snowboards",{
+      method: "POST",
+      headers: {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify(newBoard)
+      })
+      .then(r=>r.json)
+      .then(addToState(newBoard))
+
+    e.target.reset()
     }
-    
+
   return (
       <div className="new-board-form">
       <h2>New Snowboard</h2>
@@ -36,7 +46,7 @@ function AddNewSnowdboardForm({addToState}) {
         <input onChange={handleBrand} type="text" name="brand" placeholder="Fill Brand" />
         <input onChange={handleDeets} type="text" name="description" placeholder="Fill Description" />
         <input onChange={handleYear} type="text" name="year" placeholder="Fill Year" />
-        <input onChange={handleGender} type="text" name="gender" placeholder="Fill Description" />
+        <input onChange={handleGender} type="text" name="gender" placeholder="Fill Gender" />
         <input onChange={handleImage} type="text" name="image" placeholder="Image URL" />
         <input  onChange={handlePrice}type="number" name="price" step="0.01" placeholder="Price" />
         <button type="submit">Add Board</button>

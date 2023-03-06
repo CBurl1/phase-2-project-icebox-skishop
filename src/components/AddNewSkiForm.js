@@ -15,7 +15,7 @@ function AddNewSkiForm({addToState}) {
     const handleGender = (e)=> setGender(e.target.value)
     const handleImage = (e)=> setImage(e.target.value)
 
-    
+
     function handleSubmit(e){
       e.preventDefault()
       const newSki = {
@@ -26,9 +26,19 @@ function AddNewSkiForm({addToState}) {
         gender: newGender,
         image: newImage
     }
-    addToState(newSki)
+    fetch("http://localhost:3000/skis",{
+      method: "POST",
+      headers: {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify(newSki)
+      })
+      .then(r=>r.json)
+      .then(addToState(newSki))
+
+    e.target.reset()
     }
-    
+
   return (
       <div className="new-ski-form">
       <h2>New Ski</h2>
@@ -36,7 +46,7 @@ function AddNewSkiForm({addToState}) {
         <input onChange={handleBrand} type="text" name="brand" placeholder="Fill Brand" />
         <input onChange={handleDeets} type="text" name="description" placeholder="Fill Description" />
         <input onChange={handleYear} type="text" name="year" placeholder="Fill Year" />
-        <input onChange={handleGender} type="text" name="gender" placeholder="Fill Description" />
+        <input onChange={handleGender} type="text" name="gender" placeholder="Fill Gender" />
         <input onChange={handleImage} type="text" name="image" placeholder="Image URL" />
         <input  onChange={handlePrice}type="number" name="price" step="0.01" placeholder="Price" />
         <button type="submit">Add Ski</button>

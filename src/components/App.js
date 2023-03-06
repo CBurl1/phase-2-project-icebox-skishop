@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, BrowserRouter, Route} from "react-router-dom"
+import {Switch, Route} from "react-router-dom"
 import Home from "./Home"
 import About from "./About"
 import Storefront from "./Storefront"
@@ -26,7 +26,7 @@ const apparelUrl = url + "apparel"
             </Route>
             <Route exact path="/storefront/snowboards">
                 <SnowboardMerch snowboardUrl={snowboardUrl} />
-            </Route>  
+            </Route>
             <Route exact path="/storefront/skis">
                 <SkiMerch skisUrl={skisUrl} />
             </Route>
@@ -38,7 +38,7 @@ const apparelUrl = url + "apparel"
             </Route>
         </Switch>
       </div>
-    
+
   )
 }
 

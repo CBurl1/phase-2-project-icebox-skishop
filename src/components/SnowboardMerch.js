@@ -5,6 +5,8 @@ import AddNewSnowboardForm from './AddNewSnowboardForm'
 
 function SnowboardMerch({snowboardUrl}) {
     const [snowboardsList, setSnowboardsList] = useState([])
+    const [query, setQuery] = useState('')
+    
     function addToState (boardObj){
         setSnowboardsList([...snowboardsList, boardObj])
     }
@@ -23,7 +25,7 @@ function SnowboardMerch({snowboardUrl}) {
         {snowboardComponents}
         <AddNewSnowboardForm addToState={addToState}/>
     </div>
-    
+
   )
 }
 
