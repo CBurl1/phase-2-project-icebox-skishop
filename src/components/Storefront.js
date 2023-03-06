@@ -31,10 +31,10 @@ function Storefront() {
         })
   },[])
 
-  function handleSkiHover () {
+  function handleSkiClick () {
     setSeeSkis(!seeSkis)
   }
-  function handleSnowboardHover () {
+  function handleSnowboardClick () {
     setSeeSnowboards(!seeSnowboards)
   }
 
@@ -43,12 +43,12 @@ function Storefront() {
       <SubNavBar />
           <Snowboard
           snowboardsList={snowboardsList}
-          handleSkiHover={handleSkiHover}
-          seeSkis={seeSkis}
+          handleSkiClick={handleSkiClick}
+          
           />
           <Ski
           skisList={skisList}
-          handleSnowboardHover={handleSnowboardHover}
+          handleSnowboardClick={handleSnowboardClick}
           seeSnowboards={seeSnowboards}
           />
     </div>

@@ -1,13 +1,13 @@
 import React from 'react'
 import SnowboardCard from './SnowboardCard'
 
-function Snowboard({snowboardsList}) {
+function Snowboard({snowboardsList, handleSnowboardClick}) {
 
     const snowboardComponents = snowboardsList.map(snowboard => {
         return <SnowboardCard key={snowboard.id} {...snowboard}/>
     })
     return (
-        <div className="snowboards">
+        <div onMouseEnter={handleSnowboardClick}className="snowboards">
             {snowboardComponents}
         </div>
     )

@@ -1,9 +1,7 @@
 import React from 'react'
 import SkiCard from './SkiCard'
 
-function Ski({skisList,seeSkis,handleSkiHover}) {
-
-    console.log(seeSkis)
+function Ski({skisList, handleSkiClick}) {
     const skiComponents =
         skisList.map(ski => {
 
@@ -11,7 +9,7 @@ function Ski({skisList,seeSkis,handleSkiHover}) {
         })
 
   return (
-    <div className="skis">
+    <div onClick={handleSkiClick}className="skis">
       {skiComponents}
     </div>
   )
