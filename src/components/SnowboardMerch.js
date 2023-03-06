@@ -6,6 +6,7 @@ import SnowBoardSearch from './SnowBoardSearch'
 function SnowboardMerch({snowboardUrl}) {
     const [snowboardsList, setSnowboardsList] = useState([])
     const [query, setQuery] = useState('')
+    const [showForm, setShowForm] = useState(false);
 
     function addToState (boardObj){
         setSnowboardsList([boardObj, ...snowboardsList])
@@ -18,7 +19,7 @@ function SnowboardMerch({snowboardUrl}) {
             setSnowboardsList(boardsData)
           })
       },[])
-      
+
       const search = snowboardsList.filter((snowboard) =>
                      snowboard.brand.toLowerCase().includes(query) ||
                      snowboard.description.toLowerCase().includes(query) ||
@@ -30,9 +31,16 @@ function SnowboardMerch({snowboardUrl}) {
 
       const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard}/>))
 
+      function handleClick() {
+        setShowForm((showForm) => !showForm);
+      }
+
   return (
     <div>
-        <AddNewSnowboardForm addToState={addToState}/>
+        {showForm ? <AddNewSnowboardForm addToState={addToState}/> : null}
+        <div className="buttonContainer">
+          <button onClick={handleClick}>{showForm ? "Hide Form" : "Add A Snowboard"}</button>
+        </div>
         <SnowBoardSearch query={query} setQuery={setQuery}/>
         {snowboardComponents}
 

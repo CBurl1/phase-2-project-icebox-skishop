@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 
 function About() {
   return (
@@ -17,9 +17,9 @@ function About() {
         <br />
         <h2> Contact us:</h2>
         <br />
-        Phone - (555)-(555)-(555)
+        Phone - (555)-(555)-(5555)
         <br />
-        Email - support@iceboxskishop.com 
+        Email - support@iceboxskishop.com
         <br />
         Address: 225 Mountain Drive, Telluride, Colorado, 81435
     </div>

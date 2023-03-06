@@ -6,6 +6,8 @@ import SkiSearch from './SkiSearch'
 function SkiMerch({skisUrl}) {
   const [skisList, setSkisList] = useState([])
   const [query, setQuery] = useState('')
+  const [showForm, setShowForm] = useState(false);
+
   function addToState (skiObj){
     setSkisList([skiObj ,...skisList])
 }
@@ -26,9 +28,16 @@ function SkiMerch({skisUrl}) {
       ski.year.toString().includes(query)
                                                 )
      const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski}/>))
+     function handleClick() {
+      setShowForm((showForm) => !showForm);
+    }
+
   return (
     <div>
-      <AddNewSkiForm addToState={addToState}/>
+      {showForm ? <AddNewSkiForm addToState={addToState}/> : null}
+      <div className="buttonContainer">
+          <button onClick={handleClick}>{showForm ? "Hide Form" : "Add Some Skis"}</button>
+      </div>
       <SkiSearch query={query} setQuery={setQuery}/>
       {skiComponents}
     </div>

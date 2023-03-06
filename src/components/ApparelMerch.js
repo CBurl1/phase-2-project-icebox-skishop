@@ -6,6 +6,8 @@ import ApparelSearch from './ApparelSearch'
 function ApparelMerch({apparelUrl}) {
   const [apparelList , setApparelList] = useState([])
   const [query, setQuery] = useState('')
+  const [showForm, setShowForm] = useState(false);
+
   function addToState(apparelObj){
     setApparelList([apparelObj ,...apparelList])
   }
@@ -26,9 +28,18 @@ function ApparelMerch({apparelUrl}) {
     )
 
     const apparelComponents = search.map(apparel => (<ApparelCard key={apparel.id} {...apparel}/>))
+
+    function handleClick() {
+      setShowForm((showForm) => !showForm);
+    }
+
+
   return (
     <div>
-      <AddNewApparelForm addToState={addToState}/>
+      {showForm ? <AddNewApparelForm addToState={addToState}/> : null }
+      <div className="buttonContainer">
+          <button onClick={handleClick}>{showForm ? "Hide Form" : "Add an Apparel"}</button>
+      </div>
       <ApparelSearch query={query} setQuery={setQuery}/>
       {apparelComponents}
       </div>
