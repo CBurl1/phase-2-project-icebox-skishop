@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import SnowboardCard from './SnowboardCard'
 import AddNewSnowboardForm from './AddNewSnowboardForm'
-
+import SnowBoardSearch from './SnowBoardSearch'
 
 function SnowboardMerch({snowboardUrl}) {
     const [snowboardsList, setSnowboardsList] = useState([])
     const [query, setQuery] = useState('')
-    
+
     function addToState (boardObj){
         setSnowboardsList([boardObj, ...snowboardsList])
     }
@@ -18,12 +18,16 @@ function SnowboardMerch({snowboardUrl}) {
             setSnowboardsList(boardsData)
           })
       },[])
-    const snowboardComponents = snowboardsList.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard}/>))
+      const search = snowboardsList.filter(snowboard => snowboard.brand.toLowerCase().includes(query))
+
+      const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard}/>))
 
   return (
     <div>
         <AddNewSnowboardForm addToState={addToState}/>
+        <SnowBoardSearch query={query} setQuery={setQuery}/>
         {snowboardComponents}
+
     </div>
 
   )
