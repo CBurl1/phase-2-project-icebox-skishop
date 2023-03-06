@@ -1,15 +1,15 @@
-import React,{ useEffect, useState} from 'react'
+import React from 'react'
+import Skicard from './Skicard'
 
-function Ski() {
-    const [skisList, setSkisList] = useState([])
-
-    useEffect(()=> {
-        fetch('')
-    },[])
+function Ski({skisList}) {
+    const skiComponents = 
+        skisList.map(ski => {
+            return <Skicard key={ski.id} {...ski}/>
+        })
 
   return (
     <div>
-      <h1>some cards with map function</h1>
+      {skiComponents}
     </div>
   )
 }

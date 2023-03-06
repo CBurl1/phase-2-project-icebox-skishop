@@ -1,5 +1,5 @@
 {
-    "Skis":[
+    "skis":[
         {
             "id": 1,
             "brand": "Salomon",
@@ -81,5 +81,8 @@
             "gender": "Women's",
             "image": "https://www.rei.com/media/30942150-2d06-4248-80ba-a334402f8a99.jpg?size=784x588"
         }
+    ],
+    "snowboards": [
+        {}
     ]
 }
