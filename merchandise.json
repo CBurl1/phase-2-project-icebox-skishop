@@ -338,6 +338,13 @@
       "gender": "Women's",
       "price": 749,
       "category": "Skis"
+    },
+    {
+      "id": 5,
+      "description": "Armada ARV 84 Skis",
+      "gender": "Men's",
+      "price": 349,
+      "category": "Skis"
     }
   ]
 }

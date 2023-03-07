@@ -11,14 +11,17 @@ function Cart() {
         )
     },[])
 
-    const merchComponents = cartList.map(item => {
-    return <CartItem {...item} key={item.id}/>
+    const merchComponents = cartList.map((item, index) => {
+    return <CartItem {...item} key={item.id} index={index}/>
 })
   return (
     <div>
         <table className="ui celled striped padded table">
             <tbody>
                 <tr>
+                    <th>
+                        <h3 className="ui center aligned header">No.</h3>
+                    </th>
                     <th>
                         <h3 className="ui center aligned header">Description</h3>
                     </th>

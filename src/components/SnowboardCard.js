@@ -1,11 +1,28 @@
 import React, {useState} from 'react'
 import {Button, Card} from 'react-bootstrap'
 
-function SnowboardCard({countLikes, likes, removeBoard, brand, price, gender, description, image, year, id}) {
+function SnowboardCard({countLikes, likes, removeBoard, brand, price, gender, description, category, image, year, id}) {
   const [boardLikes, setBoardLikes] = useState(likes)
+
+  function addToCart(){
+    const cartItem ={
+      id: id,
+      description: description,
+      gender: gender,
+      price: price,
+      category: category
+    }
+    fetch("http://localhost:3000/cart", {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(cartItem)
+    })
+
+  }
+
   function addLikes() {
     const newLikes = boardLikes + 1
-    
+
     fetch(`http://localhost:3000/snowboards/${id}`, {
       method: 'PATCH',
       headers: {"Content-Type": "application/json"},
@@ -40,7 +57,7 @@ function SnowboardCard({countLikes, likes, removeBoard, brand, price, gender, de
         <Button variant="primary" onClick={addLikes}>
           💙 {boardLikes}
         </Button>
-        <Button variant="success">Add to Cart</Button>
+        <Button onClick={addToCart} variant="success">Add to Cart</Button>
         <Button variant="danger" onClick={() => handleDelete(id)}>
           X
         </Button>

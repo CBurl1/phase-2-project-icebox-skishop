@@ -1,8 +1,24 @@
 import React, { useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 
-function ApparelCard({ removeApparel, countLikes, likes, brand, price, gender, description, image, year, id }) {
+function ApparelCard({ removeApparel, countLikes, likes, brand, price, gender, category, description, image, year, id }) {
   const [apparelLikes, setApparelLikes] = useState(likes);
+
+  function addToCart(){
+    const cartItem ={
+      id: id,
+      description: description,
+      gender: gender,
+      price: price,
+      category: category
+    }
+    fetch("http://localhost:3000/cart", {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(cartItem)
+    })
+
+  }
 
   function addLikes() {
     const newLikes = apparelLikes + 1;
@@ -41,7 +57,7 @@ function ApparelCard({ removeApparel, countLikes, likes, brand, price, gender, d
         <Button variant="primary" onClick={addLikes}>
           💙 {apparelLikes}
         </Button>
-        <Button variant="success">Add to Cart</Button>
+        <Button onClick={addToCart}variant="success">Add to Cart</Button>
         <Button variant="danger" onClick={() => handleDelete(id)}>
           X
         </Button>
