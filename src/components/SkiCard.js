@@ -4,6 +4,21 @@ import { Button, Card } from 'react-bootstrap';
 
 function SkiCard({removeSkis, countLikes, likes, brand, price, gender, description, image, year, id}) {
    const [skiLikes, setSkiLikes]= useState(likes)
+
+   function addToCart(){
+    const cartItem ={
+      id: id,
+      description: description,
+      gender: gender,
+      price: price
+    }
+    fetch("http://localhost:3000/cart", {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(cartItem)
+    })
+
+  }
    function handleDelete() {
     removeSkis(id)
     fetch(`http://localhost:3000/skis/${id}`, {
@@ -14,7 +29,7 @@ function SkiCard({removeSkis, countLikes, likes, brand, price, gender, descripti
 
    function addLikes() {
     const newLikes = skiLikes + 1
-    
+
     fetch(`http://localhost:3000/skis/${id}`, {
       method: 'PATCH',
       headers: {"Content-Type": "application/json"},
@@ -27,7 +42,7 @@ function SkiCard({removeSkis, countLikes, likes, brand, price, gender, descripti
 
     })
   }
-   
+
   return (
     <Card style={{ width: '10rem' }}>
       <Card.Body>
@@ -42,7 +57,7 @@ function SkiCard({removeSkis, countLikes, likes, brand, price, gender, descripti
         <Button variant="primary" onClick={addLikes}>
           💙 {skiLikes}
         </Button>
-        <Button variant="success">Add to Cart</Button>
+        <Button onClick={addToCart} variant="success">Add to Cart</Button>
         <Button variant="danger" onClick={() => handleDelete(id)}>
           X
         </Button>
