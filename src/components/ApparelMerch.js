@@ -5,7 +5,7 @@ import AddNewApparelForm from './AddNewApparelForm'
 function ApparelMerch({apparelUrl}) {
   const [apparelList , setApparelList] = useState([])
   function addToState(apparelObj){
-    setApparelList([...apparelList, apparelObj])
+    setApparelList([apparelObj ,...apparelList])
   }
   useEffect(()=> {
     fetch(apparelUrl )
@@ -18,8 +18,8 @@ function ApparelMerch({apparelUrl}) {
     const apparelComponents = apparelList.map(apparel => (<ApparelCard key={apparel.id} {...apparel}/>))
   return (
     <div>
-      {apparelComponents}
       <AddNewApparelForm addToState={addToState}/>
+      {apparelComponents}
       </div>
   )
 }

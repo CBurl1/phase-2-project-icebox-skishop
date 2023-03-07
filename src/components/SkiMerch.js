@@ -5,7 +5,7 @@ import SkiCard from './SkiCard'
 function SkiMerch({skisUrl}) {
   const [skisList, setSkisList] = useState([])
   function addToState (skiObj){
-    setSkisList([...skisList, skiObj])
+    setSkisList([skiObj ,...skisList])
 }
   useEffect(()=> {
       fetch(skisUrl)
@@ -19,8 +19,8 @@ function SkiMerch({skisUrl}) {
         skisList.map(ski => ( <SkiCard key={ski.id} {...ski}/>))
   return (
     <div>
-      {skiComponents}
       <AddNewSkiForm addToState={addToState}/>
+      {skiComponents}
     </div>
   )
 }

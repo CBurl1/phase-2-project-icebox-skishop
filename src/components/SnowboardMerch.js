@@ -8,7 +8,7 @@ function SnowboardMerch({snowboardUrl}) {
     const [query, setQuery] = useState('')
     
     function addToState (boardObj){
-        setSnowboardsList([...snowboardsList, boardObj])
+        setSnowboardsList([boardObj, ...snowboardsList])
     }
     useEffect(()=> {
         fetch(snowboardUrl )
@@ -22,8 +22,8 @@ function SnowboardMerch({snowboardUrl}) {
 
   return (
     <div>
-        {snowboardComponents}
         <AddNewSnowboardForm addToState={addToState}/>
+        {snowboardComponents}
     </div>
 
   )
