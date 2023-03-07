@@ -7,7 +7,7 @@ function SkiCard({removeSkis, countLikes, likes, brand, price, gender, descripti
 
    function addToCart(){
     const cartItem ={
-      id: id,
+      
       description: description,
       gender: gender,
       price: price,

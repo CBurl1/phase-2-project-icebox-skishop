@@ -6,7 +6,7 @@ function SnowboardCard({countLikes, likes, removeBoard, brand, price, gender, de
 
   function addToCart(){
     const cartItem ={
-      id: id,
+
       description: description,
       gender: gender,
       price: price,

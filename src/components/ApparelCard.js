@@ -6,7 +6,7 @@ function ApparelCard({ removeApparel, countLikes, likes, brand, price, gender, c
 
   function addToCart(){
     const cartItem ={
-      id: id,
+      
       description: description,
       gender: gender,
       price: price,

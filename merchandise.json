@@ -324,30 +324,5 @@
       "image": "https://www.rei.com/media/a97029ba-e7cb-44ab-ac9a-fb1a3f87f975.jpg?size=576x768"
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "description": "Salomon S/MAX N6 XT Skis with Bindings",
-      "category": "Skis",
-      "gender": "Women's",
-      "price": 449
-<<<<<<< HEAD
-    },
-    {
-      "id": 3,
-      "description": "SIcelantic Skis Riveter 95 Skis",
-      "gender": "Women's",
-      "price": 749,
-      "category": "Skis"
-    },
-    {
-      "id": 5,
-      "description": "Armada ARV 84 Skis",
-      "gender": "Men's",
-      "price": 349,
-      "category": "Skis"
-=======
->>>>>>> 752fdce6db71945d6695b16ca635461379f895a3
-    }
-  ]
+  "cart": []
 }
