@@ -5,7 +5,7 @@
           "brand": "Salomon",
           "description": "Salomon S/MAX N6 XT Skis with Bindings",
           "year": 2022,
-          "price":450,
+          "price":449.99,
           "gender": "Women's",
           "image": "https://www.rei.com/media/4cd08d86-8b93-4787-8a6f-d0030d08cfb8.jpg?size=784x588"
       },
@@ -14,7 +14,7 @@
           "brand": "Fraction",
           "description": "Faction Prodigy 2X Skis",
           "year": 2022,
-          "price": 600,
+          "price": 599.99,
           "gender": "Women's",
           "image": "https://www.rei.com/media/5f877867-c31c-4ea7-b8b7-228cfa51b010.jpg?size=784x588"
       },
@@ -23,7 +23,7 @@
           "brand": "Icelantic Skis",
           "description": "SIcelantic Skis Riveter 95 Skis",
           "year": 2022,
-          "price": 750,
+          "price": 749.99,
           "gender": "Women's",
           "image": "https://www.rei.com/media/72250fae-eb80-440c-8818-de1cb2c76966.jpg?size=784x588"
       },
@@ -32,7 +32,7 @@
           "brand": "Icelantic Skis",
           "description": "Icelantic Skis Nomad 105 Skis",
           "year": 2022,
-          "price": 850,
+          "price": 849.99,
           "gender": "Men's",
           "image": "https://www.rei.com/media/203f8ca6-f13a-40ff-ade4-1e5fa16a8e6c.jpg?size=784x588"
       },
@@ -41,7 +41,7 @@
           "brand": "Armanda",
           "description": "Armada ARV 84 Skis",
           "year": 2022,
-          "price": 350,
+          "price": 349.99,
           "gender": "Men's",
           "image": "https://www.rei.com/media/55aeec21-0582-406e-950b-fec9c03ed831.jpg?size=784x588"
       },
@@ -50,7 +50,7 @@
           "brand": "Head",
           "description": "Head Absolut Joy Skis with Bindings",
           "year": 2022,
-          "price": 500,
+          "price": 499.99,
           "gender": "Women's",
           "image": "https://www.rei.com/media/86555f91-6eaf-4725-9253-c04c91a46c93.jpg?size=784x588"
       },
@@ -59,7 +59,7 @@
           "brand": "Line",
           "description": "Line Pandora 94 Skis",
           "year": 2022,
-          "price": 500,
+          "price": 499.99,
           "gender": "Women's",
           "image": "https://www.rei.com/media/f74447c6-e15f-4cf8-a59a-e9cdf20f0bc9.jpg?size=784x588"
       },
@@ -68,7 +68,7 @@
           "brand": "Nordica",
           "description": "Nordica Enforcer 104 Free Skis",
           "year": 2022,
-          "price": 800,
+          "price": 799.99,
           "gender": "Men's",
           "image": "https://www.rei.com/media/518c238b-4072-43a9-b20c-6f54611f341c.jpg?size=784x588"
       },
@@ -77,7 +77,7 @@
           "brand": "Nordica",
           "description": "Nordica Santa Ana 93 Skis",
           "year": 2022,
-          "price": 700,
+          "price": 699.99,
           "gender": "Women's",
           "image": "https://www.rei.com/media/30942150-2d06-4248-80ba-a334402f8a99.jpg?size=784x588"
       }
@@ -85,116 +85,189 @@
 
 
 
-  "apparel": [
+  "snowboards": [
     {
         "id": 1,
-        "brand": "",
-        "description": "",
-        "category": "Socks",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
+        "brand": "Jones",
+        "description": "Jones Mountain Twin Snowboard",
+        "year": 2022,
+        "price":459.99,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/0bb422b1-ac30-4fb8-bd61-e555768fcbd9.jpg"
     },
     {
-        "id": 1,
-        "brand": "",
-        "description": "",
-        "category": "Socks",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
+        "id": 2,
+        "brand": "Capita",
+        "description": "Capita Space Metal Fantasy Snowboard",
+        "year": 2022,
+        "price": 319.99,
+        "gender": "Women's",
+        "image": "https://www.rei.com/media/bcbc0938-c440-4b29-9f38-fa80744cb17b.jpg?size=784x588"
     },
     {
-        "id": 1,
-        "brand": "",
-        "description": "Baselayer",
-        "category": "",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "Baselayer",
-        "category": "",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "",
-        "category": "Midlayer",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "",
-        "category": "Midlayer",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "Midlayer",
-        "category": "",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "Shell",
-        "category": "",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "Shell",
-        "category": "",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
-    },    
-    {
-        "id": 1,
-        "brand": "",
-        "description": "Insulated Jacket",
-        "category": "",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
+        "id": 3,
+        "brand": "Arbor",
+        "description": "Arbor Cadence Camber Snowboard",
+        "year": 2022,
+        "price": 329.99,
+        "gender": "Women's",
+        "image": "https://www.rei.com/media/7a655692-f08c-4883-ba52-80435a4632a6.jpg?size=784x588"
     },
     {
-        "id": 1,
-        "brand": "",
-        "description": "",
-        "category": "Insulated Jacket",
-        "year": 2023,
-        "price":1,
-        "gender": "",
-        "image": ""
+        "id": 4,
+        "brand": "Capita",
+        "description": "Capita Mercury Snowboard",
+        "year": 2022,
+        "price": 849.99,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/9d8efea2-1fba-4552-bfa1-98b981925fbc.jpg?size=784x588"
+    },
+    {
+        "id": 5,
+        "brand": "Lib Tech",
+        "description": "Lib Tech Orca Splitboard",
+        "year": 2022,
+        "price": 959.99,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/4a218ad4-e417-42c8-ad29-91623b4761a5.jpg?size=784x588"
+    },
+    {
+        "id": 6,
+        "brand": "Lib Tech",
+        "description": "Lib Tech Cortado Snowboard",
+        "year": 2022,
+        "price": 419.99,
+        "gender": "Women's",
+        "image": "https://www.rei.com/media/dd7f42fa-d4c5-4417-9b95-1bb518e694d4.jpg?size=784x588"
+    },
+    {
+        "id": 7,
+        "brand": "Jones",
+        "description": "Jones Solution Splitboard",
+        "year": 2022,
+        "price": 979.99,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/1937350d-4889-4aa7-9c45-6ae35111cc50.jpg?size=784x588"
+    },
+    {
+        "id": 8,
+        "brand": "Jones",
+        "description": "Jones Frontier Splitboard",
+        "year": 2021,
+        "price": 799.99,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/a44c519f-1a75-4a43-9ee5-097b55ef4290.jpg?size=784x588"
+    },
+    {
+        "id": 9,
+        "brand": "Arbor",
+        "description": "Arbor Element Camber Snowboard",
+        "year": 2020,
+        "price": 499.99,
+        "gender": "Unisex",
+        "image": "https://www.rei.com/media/6885a2ad-7d21-4b16-a065-4cdf8d903005.jpg?size=784x588"
     }
-  ]
+  ],
+    "apparel": [
+    {
+    "id": 1,
+    "brand": "Stance",
+    "description": "The Simpsons X Stance Poly Snow OTC Socks",
+    "category": "Socks",
+    "year": 2023,
+    "price":24.99,
+    "gender": "Unisex",
+    "image": "https://www.stance.com/dw/image/v2/BGWC_PRD/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw71180d35/images/products/A758D22DUF_GRY.jpg?sw=800&sh=800"
+    },
+    {
+    "id": 2,
+    "brand": "Stance",
+    "description": "Jed Anderson X Stance Jester Teeth Performance Wool Snow OTC Socks",
+    "category": "Socks",
+    "year": 2023,
+    "price":29.99,
+    "gender": "Unisex",
+    "image": "https://www.stance.com/dw/image/v2/BGWC_PRD/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw103bc6fc/images/products/A758C22JES_OFW.jpg?sw=800&sh=800"
+    },
+    {
+    "id": 3,
+    "brand": "Patagonia",
+    "description": "Patagonia Capilene Midweight Base Layer Bottoms",
+    "category": "Baselayer",
+    "year": 2023,
+    "price":79.99,
+    "gender": "Men's",
+    "image": "https://www.rei.com/media/e5f81a62-f1b5-491f-9280-a74c6d9f0498.jpg?size=576x768"
+    },
+    {
+    "id": 4,
+    "brand": "Patagonia",
+    "description": "Patagonia Capilene Midweight Base Layer Bottoms",
+    "category": "Baselayer",
+    "year": 2023,
+    "price":79.99,
+    "gender": "Women's",
+    "image": "https://www.rei.com/media/d72c01aa-a85c-4efe-8722-6c448453f392.jpg?size=576x768"
+    },
+    {
+    "id": 5,
+    "brand": "Patagonia",
+    "description": "Patagonia Nano Puff® Hoodie",
+    "category": "Midlayer",
+    "year": 2023,
+    "price":279.99,
+    "gender": "Men's",
+    "image": "https://images.evo.com/imgp/700/115429/1000289/patagonia-nano-puff-hoodie-.jpg"
+    },
+    {
+    "id": 6,
+    "brand": "Patagonia",
+    "description": "Patagonia Nano Puff® Jacket",
+    "category": "Midlayer",
+    "year": 2023,
+    "price":229.99,
+    "gender": "Women's",
+    "image": "https://images.evo.com/imgp/700/102231/1001947/patagonia-nano-puff-jacket-women-s-.jpg"
+    },
+    {
+    "id": 7,
+    "brand": "Black Diamond",
+    "description": "Black Diamond Recon Stretch Ski Shell Jacket",
+    "category": "Shells",
+    "year": 2023,
+    "price":399.99,
+    "gender": "Men's",
+    "image": "https://images.evo.com/imgp/700/135051/826216/black-diamond-recon-stretch-ski-shell-jacket-.jpg"
+    },
+    {
+    "id": 8,
+    "brand": "Black Diamond",
+    "description": "Black Diamond Recon Stretch Ski Shell Jacket",
+    "category": "Shells",
+    "year": 2023,
+    "price":299.99,
+    "gender": "Women's",
+    "image": "https://images.evo.com/imgp/700/198751/826283/black-diamond-recon-stretch-ski-shell-jacket-women-s-.jpg"
+    },
+    {
+    "id": 9,
+    "brand": "Patagonia",
+    "description": "Patagonia 3-in-1 Powder Town Jacket",
+    "category": "Insulated Jacket",
+    "year": 2023,
+    "price":299.99,
+    "gender": "Men's",
+    "image": "https://images.evo.com/imgp/700/225197/948947/patagonia-3-in-1-powder-town-jacket-.jpg"
+    },
+    {
+    "id": 10,
+    "brand": "Patagonia",
+    "description": "Patagonia PowSlayer Jacket",
+    "category": "Insulated Jacket",
+    "year": 2023,
+    "price":349.99,
+    "gender": "Women's",
+    "image": "https://images.evo.com/imgp/700/136292/836731/patagonia-powslayer-jacket-women-s-.jpg"
+    }
+    ]
 }
