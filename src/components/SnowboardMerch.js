@@ -1,11 +1,29 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import SnowboardCard from './SnowboardCard'
+import AddNewSnowboardForm from './AddNewSnowboardForm'
 
-function SnowboardMerch({snowboardsList}) {
+
+function SnowboardMerch({snowboardUrl}) {
+    const [snowboardsList, setSnowboardsList] = useState([])
+    function addToState (boardObj){
+        setSnowboardsList([...snowboardsList, boardObj])
+    }
+    useEffect(()=> {
+        fetch(snowboardUrl )
+          .then(r=>r.json())
+          .then((boardsData) => {
+
+            setSnowboardsList(boardsData)
+          })
+      },[])
     const snowboardComponents = snowboardsList.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard}/>))
 
   return (
-    <div>{snowboardComponents}</div>
+    <div>
+        {snowboardComponents}
+        <AddNewSnowboardForm addToState={addToState}/>
+    </div>
+    
   )
 }
 
