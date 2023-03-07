@@ -85,87 +85,116 @@
 
 
 
-  "snowboards": [
+  "apparel": [
     {
         "id": 1,
-        "brand": "Jones",
-        "description": "Jones Mountain Twin Snowboard",
-        "year": 2022,
-        "price":460,
-        "gender": "Unisex",
-        "image": "https://www.rei.com/media/0bb422b1-ac30-4fb8-bd61-e555768fcbd9.jpg"
+        "brand": "",
+        "description": "",
+        "category": "Socks",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
     },
     {
-        "id": 2,
-        "brand": "Capita",
-        "description": "Capita Space Metal Fantasy Snowboard",
-        "year": 2022,
-        "price": 320,
-        "gender": "Women's",
-        "image": "https://www.rei.com/media/bcbc0938-c440-4b29-9f38-fa80744cb17b.jpg?size=784x588"
+        "id": 1,
+        "brand": "",
+        "description": "",
+        "category": "Socks",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
     },
     {
-        "id": 3,
-        "brand": "Arbor",
-        "description": "Arbor Cadence Camber Snowboard",
-        "year": 2022,
-        "price": 330,
-        "gender": "Women's",
-        "image": "https://www.rei.com/media/7a655692-f08c-4883-ba52-80435a4632a6.jpg?size=784x588"
+        "id": 1,
+        "brand": "",
+        "description": "Baselayer",
+        "category": "",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "Baselayer",
+        "category": "",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "",
+        "category": "Midlayer",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "",
+        "category": "Midlayer",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "Midlayer",
+        "category": "",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "Shell",
+        "category": "",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "Shell",
+        "category": "",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
+    },    
+    {
+        "id": 1,
+        "brand": "",
+        "description": "Insulated Jacket",
+        "category": "",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
     },
     {
-        "id": 4,
-        "brand": "Capita",
-        "description": "Capita Mercury Snowboard",
-        "year": 2022,
-        "price": 850,
-        "gender": "Unisex",
-        "image": "https://www.rei.com/media/9d8efea2-1fba-4552-bfa1-98b981925fbc.jpg?size=784x588"
-    },
-    {
-        "id": 5,
-        "brand": "Lib Tech",
-        "description": "Lib Tech Orca Splitboard",
-        "year": 2022,
-        "price": 960,
-        "gender": "Unisex",
-        "image": "https://www.rei.com/media/4a218ad4-e417-42c8-ad29-91623b4761a5.jpg?size=784x588"
-    },
-    {
-        "id": 6,
-        "brand": "Lib Tech",
-        "description": "Lib Tech Cortado Snowboard",
-        "year": 2022,
-        "price": 420,
-        "gender": "Women's",
-        "image": "https://www.rei.com/media/dd7f42fa-d4c5-4417-9b95-1bb518e694d4.jpg?size=784x588"
-    },
-    {
-        "id": 7,
-        "brand": "Jones",
-        "description": "Jones Solution Splitboard",
-        "year": 2022,
-        "price": 980,
-        "gender": "Unisex",
-        "image": "https://www.rei.com/media/1937350d-4889-4aa7-9c45-6ae35111cc50.jpg?size=784x588"
-    },
-    {
-        "id": 8,
-        "brand": "Jones",
-        "description": "Jones Frontier Splitboard",
-        "year": 2021,
-        "price": 800,
-        "gender": "Unisex",
-        "image": "https://www.rei.com/media/a44c519f-1a75-4a43-9ee5-097b55ef4290.jpg?size=784x588"
-    },
-    {
-        "id": 9,
-        "brand": "Arbor",
-        "description": "Arbor Element Camber Snowboard",
-        "year": 2020,
-        "price": 500,
-        "gender": "Unisex",
-        "image": "https://www.rei.com/media/6885a2ad-7d21-4b16-a065-4cdf8d903005.jpg?size=784x588"
+        "id": 1,
+        "brand": "",
+        "description": "",
+        "category": "Insulated Jacket",
+        "year": 2023,
+        "price":1,
+        "gender": "",
+        "image": ""
     }
   ]
 }
