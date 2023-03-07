@@ -331,6 +331,7 @@
       "category": "Skis",
       "gender": "Women's",
       "price": 449
+<<<<<<< HEAD
     },
     {
       "id": 3,
@@ -345,6 +346,8 @@
       "gender": "Men's",
       "price": 349,
       "category": "Skis"
+=======
+>>>>>>> 752fdce6db71945d6695b16ca635461379f895a3
     }
   ]
 }
