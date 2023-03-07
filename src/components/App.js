@@ -7,6 +7,7 @@ import NavBar from "./NavBar"
 import SnowboardMerch from './SnowboardMerch'
 import SkiMerch from './SkiMerch'
 import ApparelMerch from './ApparelMerch'
+import Cart from './Cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -32,6 +33,9 @@ const apparelUrl = url + "apparel"
             </Route>
             <Route exact path="/storefront/apparel">
                 <ApparelMerch apparelUrl={apparelUrl} />
+            </Route>
+            <Route exact path="/cart">
+                <Cart />
             </Route>
             <Route exact path="*">
                 <Home />

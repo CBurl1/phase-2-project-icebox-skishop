@@ -16,6 +16,9 @@ function NavBar() {
           <Nav.Link as={NavLink} to="/storefront" exact activeClassName="active">
             Shop here!
           </Nav.Link>
+          <Nav.Link as={NavLink} to="/cart" exact activeClassName="active">
+            View cart
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
