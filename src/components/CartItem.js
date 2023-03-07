@@ -2,9 +2,12 @@ import React from 'react'
 
 function CartItem({description, category, gender, price}) {
   return (
-    <div>
-        <p>`{description} {category} Gender: {gender} Price: {price}</p>
-    </div>
+      <tr>
+          <td>{description} </td>
+          <td>{category} </td>
+          <td>{gender} </td>
+          <td>${price}</td>
+      </tr>
   )
 }
 

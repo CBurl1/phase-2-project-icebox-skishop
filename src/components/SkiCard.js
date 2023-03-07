@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Button, Card } from 'react-bootstrap';
 
 
-function SkiCard({removeSkis, countLikes, likes, brand, price, gender, description, image, year, id}) {
+function SkiCard({removeSkis, countLikes, likes, brand, price, gender, description, image, year, id, category}) {
    const [skiLikes, setSkiLikes]= useState(likes)
 
    function addToCart(){
@@ -10,7 +10,8 @@ function SkiCard({removeSkis, countLikes, likes, brand, price, gender, descripti
       id: id,
       description: description,
       gender: gender,
-      price: price
+      price: price,
+      category: category
     }
     fetch("http://localhost:3000/cart", {
       method: 'POST',
