@@ -10,41 +10,12 @@ const apparelUrl = url + "apparel/"
 
 
 function Storefront() {
-    const [skisList, setSkisList] = useState([])
-    const [snowboardsList, setSnowboardsList] = useState([])
-    const [apparelList, setApparelList] = useState([])
-
-    useEffect(()=> {
-        fetch(skisUrl)
-          .then(r=>r.json())
-          .then((data) => {
-
-            setSkisList(data)
-          })
-    },[])
-    useEffect(()=> {
-      fetch(snowboardUrl )
-        .then(r=>r.json())
-        .then((data) => {
-
-          setSnowboardsList(data)
-        })
-    },[])
-    useEffect(()=> {
-      fetch(apparelUrl )
-        .then(r=>r.json())
-        .then((data) => {
-
-          setApparelList(data)
-        })
-    },[])
-
-
+    
   return (
     <div>
-      <Snowboard  snowboardsList={snowboardsList} />
-      <Ski skisList={skisList} />
-      <Apparel apparelList={apparelList}/>
+      <Snowboard  snowboardUrl={snowboardUrl} />
+      <Ski skisUrl={skisUrl} />
+      <Apparel apparelUrl={apparelUrl}/>
     </div>
   )
 }

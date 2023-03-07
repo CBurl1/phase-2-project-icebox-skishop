@@ -1,17 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import SkiCard from './SkiCard'
+import {Route} from "react-router-dom"
+import SkiMerch from './SkiMerch'
 
-function Ski({skisList}) {
-    const skiComponents =
-        skisList.map(ski => {
+function Ski({skisUrl}) {
+    const [skisList, setSkisList] = useState([])
+    useEffect(()=> {
+        fetch(skisUrl)
+          .then(r=>r.json())
+          .then((skisData) => {
 
-            return <SkiCard key={ski.id} {...ski}/>
-        })
+            setSkisList(skisData)
+          })
+    },[])
+   
 
   return (
     <div>
-      {skiComponents}
-    </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdK4MjzhgO-fa-EbdEHODQeiFcn59xYH33eg&usqp=CAU"/>
+            <Route path="/storefront/skis">
+                <SkiMerch/>
+            </Route>
+        </div>
   )
 }
 
