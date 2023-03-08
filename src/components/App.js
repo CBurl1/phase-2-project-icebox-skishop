@@ -8,7 +8,6 @@ import SnowboardMerch from './SnowboardMerch'
 import SkiMerch from './SkiMerch'
 import ApparelMerch from './ApparelMerch'
 
-
 function App() {
 const url = "http://localhost:3000/"
 const skisUrl = url + "skis"
