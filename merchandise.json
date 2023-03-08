@@ -199,33 +199,6 @@
       "category": "snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/6885a2ad-7d21-4b16-a065-4cdf8d903005.jpg?size=784x588"
-    },
-    {
-      "brand": "Jones",
-      "description": "",
-      "year": "",
-      "price": "",
-      "gender": "",
-      "image": "",
-      "id": 10
-    },
-    {
-      "brand": "Jones",
-      "description": "",
-      "year": "",
-      "price": "",
-      "gender": "",
-      "image": "",
-      "id": 11
-    },
-    {
-      "brand": "Jones",
-      "description": "",
-      "year": "",
-      "price": "",
-      "gender": "",
-      "image": "",
-      "id": 12
     }
   ],
   "apparel": [

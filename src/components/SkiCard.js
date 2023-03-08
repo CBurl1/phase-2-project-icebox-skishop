@@ -27,6 +27,8 @@ function SkiCard({countLikes, likes, brand, price, gender, description, image, y
         <p>{description} <br/>{year}<br/> </p>
         <p>{`$ ${price}.00`}</p>
         <button onClick={addLikes}>💙 <br/> {skiLikes}</button>
+        <button>Add to Cart</button><small><button onClick={()=>handleDelete(id)}>X</button></small>
+
 
     </div>
   )

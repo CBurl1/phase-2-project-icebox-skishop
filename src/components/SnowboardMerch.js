@@ -46,7 +46,8 @@ function SnowboardMerch({snowboardUrl}) {
                      snowboard.year.toString().includes(query)
       )
 
-      const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard} countLikes={countLikes}/>))
+      const snowboardComponents = search.map(snowboard =>
+        (<SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard} countLikes={countLikes}/>))
 
       function handleClick() {
         setShowForm((showForm) => !showForm);

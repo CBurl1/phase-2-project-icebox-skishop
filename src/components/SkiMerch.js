@@ -18,6 +18,13 @@ function SkiMerch({skisUrl}) {
     setSkisList(merchLiked)
   }
 
+  function removeSkis(doomedId) {
+    const newList = skisList.filter(skiObj => {
+      return skiObj.id !== doomedId
+    })
+    setSkisList(newList)
+  }
+
   function addToState (skiObj){
     setSkisList([skiObj ,...skisList])
 }
@@ -38,6 +45,7 @@ function SkiMerch({skisUrl}) {
       ski.year.toString().includes(query)
                                                 )
      const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} countLikes={countLikes}/>))
+     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} removeSkis={removeSkis}/>))
      function handleClick() {
       setShowForm((showForm) => !showForm);
     }
