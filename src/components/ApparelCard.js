@@ -21,7 +21,7 @@ function ApparelCard({removeApparel, countLikes, likes, brand, price, gender, de
   }
   function handleDelete() {
     removeApparel(id)
-    fetch(`http://localhost:3000/snowboards/${id}`, {
+    fetch(`http://localhost:3000/apparel/${id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'}
     })

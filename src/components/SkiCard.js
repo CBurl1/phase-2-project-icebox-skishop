@@ -1,8 +1,15 @@
 import React, {useState} from 'react'
 
 
-function SkiCard({countLikes, likes, brand, price, gender, description, image, year, id}) {
+function SkiCard({removeSkis, countLikes, likes, brand, price, gender, description, image, year, id}) {
    const [skiLikes, setSkiLikes]= useState(likes)
+   function handleDelete() {
+    removeSkis(id)
+    fetch(`http://localhost:3000/skis/${id}`, {
+      method: 'DELETE',
+      headers: {'Content-Type': 'application/json'}
+    })
+  }
 
    function addLikes() {
     const newLikes = skiLikes + 1

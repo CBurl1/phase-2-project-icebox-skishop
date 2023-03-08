@@ -44,8 +44,7 @@ function SkiMerch({skisUrl}) {
       ski.price.toString().includes(query) ||
       ski.year.toString().includes(query)
                                                 )
-     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} countLikes={countLikes}/>))
-     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} removeSkis={removeSkis}/>))
+     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} removeSkis={removeSkis} countLikes={countLikes}/>))
      function handleClick() {
       setShowForm((showForm) => !showForm);
     }
