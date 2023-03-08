@@ -4,8 +4,23 @@ import AddNewApparelForm from './AddNewApparelForm'
 import ApparelSearch from './ApparelSearch'
 
 function ApparelMerch({apparelUrl}) {
+  
   const [apparelList , setApparelList] = useState([])
   const [query, setQuery] = useState('')
+
+  function removeApparel(doomedId) {
+    console.log(doomedId)
+  }
+  function countLikes (likedObj){
+    const merchLiked = [...apparelList].map(merchObj => {
+      if(merchObj.id === likedObj.id){
+        return likedObj
+      }else{
+        return merchObj
+      }
+    })
+    setApparelList(merchLiked)
+  }
   function addToState(apparelObj){
     setApparelList([apparelObj ,...apparelList])
   }
@@ -25,7 +40,7 @@ function ApparelMerch({apparelUrl}) {
                                                 app.year.toString().includes(query)
     )
 
-    const apparelComponents = search.map(apparel => (<ApparelCard key={apparel.id} {...apparel}/>))
+    const apparelComponents = search.map(apparel => (<ApparelCard key={apparel.id} {...apparel} countLikes={countLikes} removeApparel={removeApparel}/>))
   return (
     <div>
       <AddNewApparelForm addToState={addToState}/>
