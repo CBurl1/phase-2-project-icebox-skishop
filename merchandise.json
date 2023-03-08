@@ -108,7 +108,7 @@
       "year": 2022,
       "price": 459,
       "likes": 3,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/0bb422b1-ac30-4fb8-bd61-e555768fcbd9.jpg"
     },
@@ -119,7 +119,7 @@
       "year": 2022,
       "price": 319,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Women's",
       "image": "https://www.rei.com/media/bcbc0938-c440-4b29-9f38-fa80744cb17b.jpg?size=784x588"
     },
@@ -130,7 +130,7 @@
       "year": 2022,
       "price": 329,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Women's",
       "image": "https://www.rei.com/media/7a655692-f08c-4883-ba52-80435a4632a6.jpg?size=784x588"
     },
@@ -141,7 +141,7 @@
       "year": 2022,
       "price": 849,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/9d8efea2-1fba-4552-bfa1-98b981925fbc.jpg?size=784x588"
     },
@@ -152,7 +152,7 @@
       "year": 2022,
       "price": 959,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/4a218ad4-e417-42c8-ad29-91623b4761a5.jpg?size=784x588"
     },
@@ -163,7 +163,7 @@
       "year": 2022,
       "price": 419,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Women's",
       "image": "https://www.rei.com/media/dd7f42fa-d4c5-4417-9b95-1bb518e694d4.jpg?size=784x588"
     },
@@ -174,7 +174,7 @@
       "year": 2022,
       "price": 979,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/1937350d-4889-4aa7-9c45-6ae35111cc50.jpg?size=784x588"
     },
@@ -185,7 +185,7 @@
       "year": 2021,
       "price": 799,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/a44c519f-1a75-4a43-9ee5-097b55ef4290.jpg?size=784x588"
     },
@@ -196,7 +196,7 @@
       "year": 2020,
       "price": 499,
       "likes": 0,
-      "category": "snowboards",
+      "category": "Snowboards",
       "gender": "Unisex",
       "image": "https://www.rei.com/media/6885a2ad-7d21-4b16-a065-4cdf8d903005.jpg?size=784x588"
     }
@@ -206,7 +206,7 @@
       "id": 1,
       "brand": "Stance",
       "description": "The Simpsons X Stance Poly Snow OTC Socks",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 24,
       "likes": 2,
@@ -217,7 +217,7 @@
       "id": 2,
       "brand": "Stance",
       "description": "Jed Anderson X Stance Jester Teeth Performance Wool Snow OTC Socks",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 29,
       "likes": 2,
@@ -228,7 +228,7 @@
       "id": 3,
       "brand": "Patagonia",
       "description": "Patagonia Capilene Midweight Base Layer Bottoms",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 79,
       "likes": 0,
@@ -239,7 +239,7 @@
       "id": 4,
       "brand": "Patagonia",
       "description": "Patagonia Capilene Midweight Base Layer Bottoms",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 79,
       "likes": 0,
@@ -250,7 +250,7 @@
       "id": 5,
       "brand": "Patagonia",
       "description": "Patagonia Nano Puff® Hoodie",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 279,
       "likes": 0,
@@ -261,7 +261,7 @@
       "id": 6,
       "brand": "Patagonia",
       "description": "Patagonia Nano Puff® Jacket",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 229,
       "likes": 0,
@@ -272,7 +272,7 @@
       "id": 7,
       "brand": "Black Diamond",
       "description": "Black Diamond Recon Stretch Ski Shell Jacket",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 399,
       "likes": 0,
@@ -283,7 +283,7 @@
       "id": 8,
       "brand": "Black Diamond",
       "description": "Black Diamond Recon Stretch Ski Shell Jacket",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 299,
       "likes": 0,
@@ -294,7 +294,7 @@
       "id": 9,
       "brand": "Patagonia",
       "description": "Patagonia 3-in-1 Powder Town Jacket",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 299,
       "likes": 0,
@@ -305,7 +305,7 @@
       "id": 10,
       "brand": "Patagonia",
       "description": "Patagonia PowSlayer Jacket",
-      "category": "apparel",
+      "category": "Apparel",
       "year": 2023,
       "price": 349,
       "likes": 1,
@@ -316,7 +316,7 @@
       "id": 11,
       "brand": "Picture Organic Clothing",
       "description": "Picture Organic Clothing Avening Bib Snow Pants",
-      "category": "apparel",
+      "category": "Apparel",
       "year": "2022",
       "price": 180,
       "likes": 0,
@@ -324,5 +324,54 @@
       "image": "https://www.rei.com/media/a97029ba-e7cb-44ab-ac9a-fb1a3f87f975.jpg?size=576x768"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "image": "https://www.rei.com/media/0bb422b1-ac30-4fb8-bd61-e555768fcbd9.jpg",
+      "description": "Jones Mountain Twin Snowboard",
+      "gender": "Unisex",
+      "price": 459,
+      "category": "Snowboards",
+      "id": 1
+    },
+    {
+      "image": "https://www.rei.com/media/72250fae-eb80-440c-8818-de1cb2c76966.jpg?size=784x588",
+      "description": "SIcelantic Skis Riveter 95 Skis",
+      "gender": "Women's",
+      "price": 749,
+      "category": "Skis",
+      "id": 2
+    },
+    {
+      "image": "https://www.stance.com/dw/image/v2/BGWC_PRD/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw71180d35/images/products/A758D22DUF_GRY.jpg?sw=800&sh=800",
+      "description": "The Simpsons X Stance Poly Snow OTC Socks",
+      "gender": "Unisex",
+      "price": 24,
+      "category": "Apparel",
+      "id": 3
+    },
+    {
+      "image": "https://www.rei.com/media/bcbc0938-c440-4b29-9f38-fa80744cb17b.jpg?size=784x588",
+      "description": "Capita Space Metal Fantasy Snowboard",
+      "gender": "Women's",
+      "price": 319,
+      "category": "Snowboards",
+      "id": 4
+    },
+    {
+      "image": "https://www.rei.com/media/86555f91-6eaf-4725-9253-c04c91a46c93.jpg?size=784x588",
+      "description": "Head Absolut Joy Skis with Bindings",
+      "gender": "Women's",
+      "price": 499,
+      "category": "Skis",
+      "id": 5
+    },
+    {
+      "image": "https://www.rei.com/media/d72c01aa-a85c-4efe-8722-6c448453f392.jpg?size=576x768",
+      "description": "Patagonia Capilene Midweight Base Layer Bottoms",
+      "gender": "Women's",
+      "price": 79,
+      "category": "Apparel",
+      "id": 6
+    }
+  ]
 }
