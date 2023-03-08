@@ -8,6 +8,13 @@ function SnowboardMerch({snowboardUrl}) {
     const [query, setQuery] = useState('')
     const [showForm, setShowForm] = useState(false);
 
+    function removeBoard (doomedId) {
+      const newList = snowboardsList.filter(boardObj => {
+        return boardObj.id !== doomedId
+      })
+      setSnowboardsList(newList)
+    }
+
     function addToState (boardObj){
         setSnowboardsList([boardObj, ...snowboardsList])
     }
@@ -29,7 +36,7 @@ function SnowboardMerch({snowboardUrl}) {
                      snowboard.year.toString().includes(query)
       )
 
-      const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard}/>))
+      const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard}/>))
 
       function handleClick() {
         setShowForm((showForm) => !showForm);

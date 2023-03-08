@@ -1,16 +1,12 @@
 import React from 'react'
 
-function SnowboardCard({brand, price, gender, description, image, year, id}) {
+function SnowboardCard({removeBoard, brand, price, gender, description, image, year, id}) {
   function handleDelete() {
+    removeBoard(id)
     fetch(`http://localhost:3000/snowboards/${id}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'}
     })
-      .then(r=>r.json())
-      .then( result => {
-        console.log(result)
-      })
-
   }
 
   return (
