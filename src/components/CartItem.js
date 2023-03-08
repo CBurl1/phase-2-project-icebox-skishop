@@ -13,7 +13,7 @@ function CartItem({id, description, category, gender, price, removeItem, index, 
     <>
       <tr>
           <td>{index+1}.</td>
-          <td><img src={image} alt={description} style={{ width: "10%", height: "10%" }}></img></td>
+          <td><img src={image} alt={description} style={{ width: "100px", height: "150px",  }}></img></td>
           <td>{description} </td>
           <td>{category} </td>
           <td>{gender} </td>

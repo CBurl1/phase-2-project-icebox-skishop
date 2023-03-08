@@ -326,44 +326,28 @@
   ],
   "cart": [
     {
-      "image": "https://www.rei.com/media/0bb422b1-ac30-4fb8-bd61-e555768fcbd9.jpg",
-      "description": "Jones Mountain Twin Snowboard",
-      "gender": "Unisex",
-      "price": 459,
-      "category": "Snowboards",
+      "image": "https://www.rei.com/media/4cd08d86-8b93-4787-8a6f-d0030d08cfb8.jpg?size=784x588",
+      "description": "Salomon S/MAX N6 XT Skis with Bindings",
+      "gender": "Women's",
+      "price": 449,
+      "category": "Skis",
       "id": 1
     },
     {
-      "image": "https://www.rei.com/media/72250fae-eb80-440c-8818-de1cb2c76966.jpg?size=784x588",
-      "description": "SIcelantic Skis Riveter 95 Skis",
-      "gender": "Women's",
-      "price": 749,
-      "category": "Skis",
+      "image": "https://www.stance.com/dw/image/v2/BGWC_PRD/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw103bc6fc/images/products/A758C22JES_OFW.jpg?sw=800&sh=800",
+      "description": "Jed Anderson X Stance Jester Teeth Performance Wool Snow OTC Socks",
+      "gender": "Unisex",
+      "price": 29,
+      "category": "Apparel",
       "id": 2
     },
     {
-      "image": "https://www.stance.com/dw/image/v2/BGWC_PRD/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw71180d35/images/products/A758D22DUF_GRY.jpg?sw=800&sh=800",
-      "description": "The Simpsons X Stance Poly Snow OTC Socks",
+      "image": "https://www.rei.com/media/9d8efea2-1fba-4552-bfa1-98b981925fbc.jpg?size=784x588",
+      "description": "Capita Mercury Snowboard",
       "gender": "Unisex",
-      "price": 24,
-      "category": "Apparel",
-      "id": 3
-    },
-    {
-      "image": "https://www.rei.com/media/bcbc0938-c440-4b29-9f38-fa80744cb17b.jpg?size=784x588",
-      "description": "Capita Space Metal Fantasy Snowboard",
-      "gender": "Women's",
-      "price": 319,
+      "price": 849,
       "category": "Snowboards",
-      "id": 4
-    },
-    {
-      "image": "https://www.rei.com/media/86555f91-6eaf-4725-9253-c04c91a46c93.jpg?size=784x588",
-      "description": "Head Absolut Joy Skis with Bindings",
-      "gender": "Women's",
-      "price": 499,
-      "category": "Skis",
-      "id": 5
+      "id": 3
     },
     {
       "image": "https://www.rei.com/media/d72c01aa-a85c-4efe-8722-6c448453f392.jpg?size=576x768",
@@ -371,6 +355,14 @@
       "gender": "Women's",
       "price": 79,
       "category": "Apparel",
+      "id": 4
+    },
+    {
+      "image": "https://www.rei.com/media/4a218ad4-e417-42c8-ad29-91623b4761a5.jpg?size=784x588",
+      "description": "Lib Tech Orca Splitboard",
+      "gender": "Unisex",
+      "price": 959,
+      "category": "Snowboards",
       "id": 6
     }
   ]

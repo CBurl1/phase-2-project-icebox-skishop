@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react'
 import CartItem from './CartItem'
-import CartTotal from './CartTotal'
 
 function Cart() {
     const [cartList, setCartList]= useState([])
@@ -21,13 +20,12 @@ function Cart() {
     },[])
 
     const merchComponents = [...cartList].map((item, index) => {
-    return <CartItem {...item} key={item.id} removeItem={removeItem} index={index}/>
-})
-//     const merchPrice = [...cartList].map(item => {
-//     return <CartTotal key={item.id} price={item.price}/>
-// })
-    let total = []
-    total = total + cartList.price
+        return <CartItem {...item} key={item.id} removeItem={removeItem} index={index}/>
+    })
+    const merchPrice = [...cartList].map(item => {
+        return item.price
+    })
+    const total = merchPrice.reduce((initialTotal, price) => price + initialTotal, 0)
   return (
     <div>
         <table className="ui celled striped padded table">
@@ -52,15 +50,11 @@ function Cart() {
                         <h3 className="ui center aligned header">Amount</h3>
                     </th>
                     </tr>
-
                     {merchComponents}
-
-                    <CartTotal total={total} />
-
-
-
             </tbody>
         </table>
+
+        <h2 style={{textAlign: "center"}}>Total: ${total}</h2>
     </div>
   )
 }
