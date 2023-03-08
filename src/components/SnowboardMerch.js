@@ -14,6 +14,16 @@ function SnowboardMerch({snowboardUrl}) {
       })
       setSnowboardsList(newList)
     }
+    function countLikes (likedObj){
+      const merchLiked = [...snowboardsList].map(merchObj => {
+        if(merchObj.id === likedObj.id){
+          return likedObj
+        }else{
+          return merchObj
+        }
+      })
+      setSnowboardsList(merchLiked)
+    }
 
     function addToState (boardObj){
         setSnowboardsList([boardObj, ...snowboardsList])
@@ -36,7 +46,7 @@ function SnowboardMerch({snowboardUrl}) {
                      snowboard.year.toString().includes(query)
       )
 
-      const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard}/>))
+      const snowboardComponents = search.map(snowboard => (<SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard} countLikes={countLikes}/>))
 
       function handleClick() {
         setShowForm((showForm) => !showForm);

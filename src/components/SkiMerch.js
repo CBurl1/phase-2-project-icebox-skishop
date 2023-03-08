@@ -7,6 +7,16 @@ function SkiMerch({skisUrl}) {
   const [skisList, setSkisList] = useState([])
   const [query, setQuery] = useState('')
   const [showForm, setShowForm] = useState(false);
+  function countLikes (likedObj){
+    const merchLiked = [...skisList].map(merchObj => {
+      if(merchObj.id === likedObj.id){
+        return likedObj
+      }else{
+        return merchObj
+      }
+    })
+    setSkisList(merchLiked)
+  }
 
   function addToState (skiObj){
     setSkisList([skiObj ,...skisList])
@@ -27,7 +37,7 @@ function SkiMerch({skisUrl}) {
       ski.price.toString().includes(query) ||
       ski.year.toString().includes(query)
                                                 )
-     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski}/>))
+     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} countLikes={countLikes}/>))
      function handleClick() {
       setShowForm((showForm) => !showForm);
     }
