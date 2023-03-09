@@ -7,6 +7,7 @@ import NavBar from "./NavBar"
 import SnowboardMerch from './SnowboardMerch'
 import SkiMerch from './SkiMerch'
 import ApparelMerch from './ApparelMerch'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 const url = "http://localhost:3000/"

@@ -1,43 +1,53 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
+import { Button, Card } from 'react-bootstrap';
 
-function ApparelCard({removeApparel, countLikes, likes, brand, price, gender, description, image, year, id}) {
-  const [apparelLikes, setApparelLikes] = useState(likes)
-  function handleDelete(){console.log('hello')}
+function ApparelCard({ removeApparel, countLikes, likes, brand, price, gender, description, image, year, id }) {
+  const [apparelLikes, setApparelLikes] = useState(likes);
 
   function addLikes() {
-    const newLikes = apparelLikes + 1
+    const newLikes = apparelLikes + 1;
 
     fetch(`http://localhost:3000/apparel/${id}`, {
       method: 'PATCH',
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({likes:newLikes})
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ likes: newLikes })
     })
-    .then(r => r.json())
-    .then(data => {
-      countLikes(data)
-      setApparelLikes(newLikes)
-
-    })
+      .then(r => r.json())
+      .then(data => {
+        countLikes(data);
+        setApparelLikes(newLikes);
+      });
   }
+
   function handleDelete() {
-    removeApparel(id)
+    removeApparel(id);
     fetch(`http://localhost:3000/apparel/${id}`, {
       method: 'DELETE',
-      headers: {'Content-Type': 'application/json'}
-    })
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
+
   return (
-    <div>
-        <div id={id} >
-        <h2>{brand} <br/> {gender}</h2>
-        <img src={image} alt={description}/>
-        <p>{description} <br/>{year}<br/> </p>
-        <p>{`$ ${price}.00`}</p>
-        <button onClick={addLikes}>💙 <br/> {apparelLikes}</button>
-        <button>Add to Cart</button><small><button onClick={()=>handleDelete(id)}>X</button></small>
-    </div>
-    </div>
-  )
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>{brand}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">{gender}</Card.Subtitle>
+        <Card.Img src={image} alt={description} />
+        <Card.Text>
+          {description} <br />
+          {year}
+        </Card.Text>
+        <Card.Text>{`$ ${price}.00`}</Card.Text>
+        <Button variant="primary" onClick={addLikes}>
+          💙 {apparelLikes}
+        </Button>
+        <Button variant="success">Add to Cart</Button>
+        <Button variant="danger" onClick={() => handleDelete(id)}>
+          X
+        </Button>
+      </Card.Body>
+    </Card>
+  );
 }
 
-export default ApparelCard
+export default ApparelCard;
