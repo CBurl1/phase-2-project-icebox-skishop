@@ -36,8 +36,8 @@ function AddNewApparelForm({addToState}) {
       },
       body: JSON.stringify(newApparel)
       })
-      .then(r=>r.json)
-      .then(addToState(newApparel))
+      .then(r=>r.json())
+      .then(apparelData=> addToState(apparelData))
 
     e.target.reset()
     }

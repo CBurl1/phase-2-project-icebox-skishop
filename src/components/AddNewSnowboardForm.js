@@ -33,8 +33,8 @@ function AddNewSnowdboardForm({addToState}) {
       },
       body: JSON.stringify(newBoard)
       })
-      .then(r=>r.json)
-      .then(addToState(newBoard))
+      .then(r=>r.json())
+      .then(boardData=>addToState(boardData))
 
     e.target.reset()
     }

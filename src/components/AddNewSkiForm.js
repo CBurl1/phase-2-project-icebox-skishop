@@ -33,8 +33,8 @@ function AddNewSkiForm({addToState}) {
       },
       body: JSON.stringify(newSki)
       })
-      .then(r=>r.json)
-      .then(addToState(newSki))
+      .then(r=>r.json())
+      .then(skiData => addToState(skiData))
 
     e.target.reset()
     }
