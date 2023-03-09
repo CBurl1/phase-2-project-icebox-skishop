@@ -1,24 +1,22 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+import CartItem from './CartItem'
 
 function Cart() {
+    const [cartList, setCartList]= useState([])
+
+    useEffect(()=> {
+        fetch("http://localhost:3000/cart")
+        .then(r=> r.json())
+        .then(cartData => setCartList(cartData)
+        )
+    },[])
+
+    const merchComponents = cartList.map(item => {
+    return <CartItem {...item} key={item.id}/>
+})
   return (
     <div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> description </td>
-                    <td> click count for each card.id button </td>
-                    <td> $$$$$$$$$$$$$ </td>
-                </tr>
-            </tbody>
-        </table>
+        {merchComponents}
     </div>
   )
 }
