@@ -3,6 +3,12 @@ import CartItem from './CartItem'
 
 function Cart() {
     const [cartList, setCartList]= useState([])
+    function removeItem(doomedId){
+        const newCart = cartList.filter(cartObj => {
+            return cartObj.id !== doomedId 
+        })
+        setCartList(newCart)
+    }
 
     useEffect(()=> {
         fetch("http://localhost:3000/cart")
@@ -11,8 +17,8 @@ function Cart() {
         )
     },[])
 
-    const merchComponents = cartList.map(item => {
-    return <CartItem {...item} key={item.id}/>
+    const merchComponents = [...cartList].map(item => {
+    return <CartItem {...item} key={item.id} removeItem={removeItem}/>
 })
   return (
     <div>

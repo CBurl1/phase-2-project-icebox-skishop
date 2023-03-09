@@ -331,13 +331,6 @@
       "category": "Skis",
       "gender": "Women's",
       "price": 449
-    },
-    {
-      "id": 3,
-      "description": "SIcelantic Skis Riveter 95 Skis",
-      "gender": "Women's",
-      "price": 749,
-      "category": "Skis"
     }
   ]
 }
