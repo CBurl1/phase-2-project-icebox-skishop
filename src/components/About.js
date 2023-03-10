@@ -7,7 +7,7 @@ function About() {
       <Row>
         <Col>
           <h1>About Us</h1>
-          <h2> Hello valued customer ᨒ </h2>
+          <h2> Hello Valued Customer ᨒ </h2>
           <p>
             Ever since Icebox Ski Shop was founded in March of 2023, we have been providing the best gear for the steeziest shredders.
             Whether you need something skinny to rip groomers or a wide setup for those big powder days we have everything to meet your needs.
@@ -18,7 +18,7 @@ function About() {
       </Row>
       <Row>
         <Col>
-          <h2>We are here to answer any of your questions!</h2>
+          <h2>We Are Here to Answer Any of Your Questions!</h2>
           <br />
           <h2> Contact us:</h2>
           <br />
