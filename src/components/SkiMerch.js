@@ -47,11 +47,9 @@ function SkiMerch({skisUrl}) {
                                                 )
      const skiComponents = search.map(ski => {
       return (
-        <Row className="justify-content-md-center">
           <Col xs={12} md={4}>
             <SkiCard key={ski.id} {...ski} removeSkis={removeSkis} countLikes={countLikes}/>
           </Col>
-        </Row>
       )
      })
      function handleClick() {
@@ -65,7 +63,12 @@ function SkiMerch({skisUrl}) {
           <button className='rounded' onClick={handleClick}>{showForm ? "Hide Form" : "Add Some Skis"}</button>
       </div>
       <SkiSearch query={query} setQuery={setQuery}/>
-      {skiComponents}
+      <br/>
+      <br/>
+      <Row className="justify-content-md-center">
+        {skiComponents}
+      </Row>
+      
     </div>
   )
 }

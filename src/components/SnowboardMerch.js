@@ -49,10 +49,10 @@ function SnowboardMerch({snowboardUrl}) {
 
       const snowboardComponents = search.map(snowboard => {
         return (
-          <Row className="justify-content-md-center">
+          
             <Col xs={12} md={4}>
               <SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard} countLikes={countLikes}/>            </Col>
-          </Row>
+         
         )
       })
       function handleClick() {
@@ -66,7 +66,11 @@ function SnowboardMerch({snowboardUrl}) {
           <button className='rounded' onClick={handleClick}>{showForm ? "Hide Form" : "Add A Snowboard"}</button>
         </div>
         <SnowBoardSearch query={query} setQuery={setQuery}/>
-        {snowboardComponents}
+        <br/>
+        <br/>
+        <Row className="justify-content-md-center">
+          {snowboardComponents}
+        </Row>
 
     </div>
 

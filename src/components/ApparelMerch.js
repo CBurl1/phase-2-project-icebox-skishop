@@ -46,11 +46,9 @@ function ApparelMerch({apparelUrl}) {
 
     const apparelComponents = search.map(apparel => {
       return (
-        <Row className="justify-content-md-center">
           <Col xs={12} md={4}>
             <ApparelCard key={apparel.id} {...apparel} countLikes={countLikes} removeApparel={removeApparel}/>
           </Col>
-        </Row>
       )
   })
 
@@ -65,7 +63,12 @@ function ApparelMerch({apparelUrl}) {
           <button className='rounded' onClick={handleClick}>{showForm ? "Hide Form" : "Add an Apparel"}</button>
       </div>
       <ApparelSearch query={query} setQuery={setQuery}/>
-      {apparelComponents}
+      <br/>
+      <br/>
+      <Row className="justify-content-md-center">
+        {apparelComponents}
+      </Row>
+      
       </div>
   )
 }
