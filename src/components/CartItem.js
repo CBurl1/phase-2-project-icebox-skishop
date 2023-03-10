@@ -18,7 +18,7 @@ function CartItem({id, description, category, gender, price, removeItem, index, 
           <td>{category} </td>
           <td>{gender} </td>
           <td>${price}</td>
-          <button onClick={handleDelete}>X</button>
+          <button className='border-0'onClick={handleDelete}>X</button>
       </tr>
     </>
 

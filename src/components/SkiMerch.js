@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import AddNewSkiForm from './AddNewSkiForm'
 import SkiCard from './SkiCard'
 import SkiSearch from './SkiSearch'
+import { Row, Col } from 'react-bootstrap';
 
 function SkiMerch({skisUrl}) {
   const [skisList, setSkisList] = useState([])
@@ -44,7 +45,15 @@ function SkiMerch({skisUrl}) {
       ski.price.toString().includes(query) ||
       ski.year.toString().includes(query)
                                                 )
-     const skiComponents = search.map(ski => ( <SkiCard key={ski.id} {...ski} removeSkis={removeSkis} countLikes={countLikes}/>))
+     const skiComponents = search.map(ski => {
+      return (
+        <Row className="justify-content-md-center">
+          <Col xs={12} md={4}>
+            <SkiCard key={ski.id} {...ski} removeSkis={removeSkis} countLikes={countLikes}/>
+          </Col>
+        </Row>
+      )
+     })
      function handleClick() {
       setShowForm((showForm) => !showForm);
     }
@@ -53,7 +62,7 @@ function SkiMerch({skisUrl}) {
     <div>
       {showForm ? <AddNewSkiForm addToState={addToState}/> : null}
       <div className="buttonContainer">
-          <button onClick={handleClick}>{showForm ? "Hide Form" : "Add Some Skis"}</button>
+          <button className='rounded' onClick={handleClick}>{showForm ? "Hide Form" : "Add Some Skis"}</button>
       </div>
       <SkiSearch query={query} setQuery={setQuery}/>
       {skiComponents}

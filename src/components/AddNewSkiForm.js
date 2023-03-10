@@ -49,7 +49,7 @@ function AddNewSkiForm({addToState}) {
         <input onChange={handleGender} type="text" name="gender" placeholder="Fill Gender" />
         <input onChange={handleImage} type="text" name="image" placeholder="Image URL" />
         <input  onChange={handlePrice}type="number" name="price" step="0.01" placeholder="Price" />
-        <button type="submit">Add Ski</button>
+        <button className='rounded' type="submit">Add Ski</button>
       </form>
     </div>
   )

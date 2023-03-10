@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import ApparelCard from './ApparelCard'
 import AddNewApparelForm from './AddNewApparelForm'
 import ApparelSearch from './ApparelSearch'
+import { Row, Col } from 'react-bootstrap';
 
 function ApparelMerch({apparelUrl}) {
 
@@ -43,7 +44,15 @@ function ApparelMerch({apparelUrl}) {
                                                 app.year.toString().includes(query)
     )
 
-    const apparelComponents = search.map(apparel => (<ApparelCard key={apparel.id} {...apparel} countLikes={countLikes} removeApparel={removeApparel}/>))
+    const apparelComponents = search.map(apparel => {
+      return (
+        <Row className="justify-content-md-center">
+          <Col xs={12} md={4}>
+            <ApparelCard key={apparel.id} {...apparel} countLikes={countLikes} removeApparel={removeApparel}/>
+          </Col>
+        </Row>
+      )
+  })
 
     function handleClick() {
       setShowForm((showForm) => !showForm);
@@ -53,7 +62,7 @@ function ApparelMerch({apparelUrl}) {
     <div>
       {showForm ? <AddNewApparelForm addToState={addToState}/> : null }
       <div className="buttonContainer">
-          <button onClick={handleClick}>{showForm ? "Hide Form" : "Add an Apparel"}</button>
+          <button className='rounded' onClick={handleClick}>{showForm ? "Hide Form" : "Add an Apparel"}</button>
       </div>
       <ApparelSearch query={query} setQuery={setQuery}/>
       {apparelComponents}

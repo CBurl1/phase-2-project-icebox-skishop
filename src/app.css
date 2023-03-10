@@ -24,4 +24,8 @@
     line-height: 1.5;
     margin-top: 20px;
   }
+button {
+  border-radius: rounded;
 
+  border: none;
+}

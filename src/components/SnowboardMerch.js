@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import SnowboardCard from './SnowboardCard'
 import AddNewSnowboardForm from './AddNewSnowboardForm'
 import SnowBoardSearch from './SnowBoardSearch'
+import { Row, Col } from 'react-bootstrap';
 
 function SnowboardMerch({snowboardUrl}) {
     const [snowboardsList, setSnowboardsList] = useState([])
@@ -46,9 +47,14 @@ function SnowboardMerch({snowboardUrl}) {
                      snowboard.year.toString().includes(query)
       )
 
-      const snowboardComponents = search.map(snowboard =>
-        (<SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard} countLikes={countLikes}/>))
-
+      const snowboardComponents = search.map(snowboard => {
+        return (
+          <Row className="justify-content-md-center">
+            <Col xs={12} md={4}>
+              <SnowboardCard key={snowboard.id} {...snowboard} removeBoard={removeBoard} countLikes={countLikes}/>            </Col>
+          </Row>
+        )
+      })
       function handleClick() {
         setShowForm((showForm) => !showForm);
       }
@@ -57,7 +63,7 @@ function SnowboardMerch({snowboardUrl}) {
     <div>
         {showForm ? <AddNewSnowboardForm addToState={addToState}/> : null}
         <div className="buttonContainer">
-          <button onClick={handleClick}>{showForm ? "Hide Form" : "Add A Snowboard"}</button>
+          <button className='rounded' onClick={handleClick}>{showForm ? "Hide Form" : "Add A Snowboard"}</button>
         </div>
         <SnowBoardSearch query={query} setQuery={setQuery}/>
         {snowboardComponents}
