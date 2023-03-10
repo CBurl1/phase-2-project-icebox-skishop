@@ -48,7 +48,7 @@ function SnowboardCard({countLikes, likes, removeBoard, brand, price, gender, de
       <Card.Body>
         <Card.Title>{brand}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{gender}</Card.Subtitle>
-        <Card.Img src={image} alt={description} />
+        <Card.Img className='img-fluid' style={{ width: "auto", height: "200px",  }} src={image} alt={description} />
         <Card.Text>
           {description} <br />
           {year}
