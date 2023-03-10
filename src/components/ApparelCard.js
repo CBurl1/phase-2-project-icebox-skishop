@@ -54,11 +54,11 @@ function ApparelCard({ removeApparel, countLikes, likes, brand, price, gender, c
           {year}
         </Card.Text>
         <Card.Text>{`$ ${price}.00`}</Card.Text>
-        <Button variant="primary" onClick={addLikes}>
-          💙 {apparelLikes}
+        <Button variant="primary" onClick={addLikes} className="btn-sm" data-bs-toggle="button">
+          💙 {apparelLikes} Likes
         </Button>
-        <Button onClick={addToCart}variant="success">Add to Cart</Button>
-        <Button variant="danger" onClick={() => handleDelete(id)}>
+        <Button onClick={addToCart} variant="success" className="btn-sm">Add to Cart</Button>
+        <Button variant="danger" onClick={() => handleDelete(id)} className="btn-sm">
           X
         </Button>
       </Card.Body>
