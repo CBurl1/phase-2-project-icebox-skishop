@@ -348,22 +348,6 @@
       "price": 849,
       "category": "Snowboards",
       "id": 3
-    },
-    {
-      "image": "https://www.rei.com/media/d72c01aa-a85c-4efe-8722-6c448453f392.jpg?size=576x768",
-      "description": "Patagonia Capilene Midweight Base Layer Bottoms",
-      "gender": "Women's",
-      "price": 79,
-      "category": "Apparel",
-      "id": 4
-    },
-    {
-      "image": "https://www.rei.com/media/4a218ad4-e417-42c8-ad29-91623b4761a5.jpg?size=784x588",
-      "description": "Lib Tech Orca Splitboard",
-      "gender": "Unisex",
-      "price": 959,
-      "category": "Snowboards",
-      "id": 6
     }
   ]
 }
