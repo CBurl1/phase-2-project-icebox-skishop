@@ -16,7 +16,12 @@ const skisUrl = url + "skis"
 const snowboardUrl = url + "snowboards"
 const apparelUrl = url + "apparel"
   return (
-      <div>
+      <div
+        style={{
+        background: 'linear-gradient(to bottom, #87CEFA, #FFFFFF)',
+        minHeight: '100vh',
+      }}
+      >
       <NavBar />
         <Switch>
             <Route exact path="/about">
